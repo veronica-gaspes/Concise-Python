@@ -2,4 +2,6 @@
 
 You can define your own classes.
 
-The book [Introduction to programming in Python](https://introcs.cs.princeton.edu/python/) presents some expressions in [chapter 3.2](https://introcs.cs.princeton.edu/python/32class/.)
+The book
+[Introduction to programming in Python](https://introcs.cs.princeton.edu/python/)
+presents class definitions in [chapter 3.2](https://introcs.cs.princeton.edu/python/32class/.)
