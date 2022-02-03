@@ -1,0 +1,17 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: jupyter-notebooks
+- file: expressions
+  sections:
+  - file: literals
+  - file: operations
+  - file: functions
+  - file: ranges-and-random 
+  - file: the-end
+- file: commands
+- file: function-definition
+- file: class-definition
