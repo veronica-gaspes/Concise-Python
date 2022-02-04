@@ -13,5 +13,11 @@ chapters:
   - file: ranges-and-random 
   - file: the-end
 - file: commands
+  sections:
+  - file: assignment
+  - file: list-methods
+  - file: sequence
+  - file: conditionals
+  - file: loops
 - file: function-definition
 - file: class-definition
