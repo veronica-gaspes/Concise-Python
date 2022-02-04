@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Commands &#8212; A concise presentation of Python</title>
+    <title>Conditionals &#8212; A concise presentation of Python</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -51,8 +51,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Assignment" href="assignment.html" />
-    <link rel="prev" title="The end" href="the-end.html" />
+    <link rel="next" title="Loops" href="loops.html" />
+    <link rel="prev" title="Sequence" href="sequence.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -140,7 +140,7 @@
   </ul>
  </li>
  <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+  <a class="reference internal" href="commands.html">
    Commands
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
@@ -148,7 +148,7 @@
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="assignment.html">
      Assignment
@@ -164,8 +164,8 @@
      Sequence
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="conditionals.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Conditionals
     </a>
    </li>
@@ -227,9 +227,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/commands.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/conditionals.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -247,7 +247,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fcommands.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fconditionals.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -263,24 +263,28 @@
 
             <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/conditionals.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
         </div>
 
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#expressions-vs-commands">
-   Expressions vs commands
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -288,54 +292,63 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Commands</h1>
+                <h1>Conditionals</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#expressions-vs-commands">
-   Expressions vs commands
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="commands">
-<h1>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h1>
-<p>Commands can be executed.  Commands are formed using assignments, sequences, conditionals, loops and methods This chapter shows you how to use commands.</p>
-<p>The book <a class="reference external" href="https://introcs.cs.princeton.edu/python/">Introduction to programming in Python</a> presents some commands  in <a class="reference external" href="https://introcs.cs.princeton.edu/python/13flow/.">chapter 1.3</a></p>
-<div class="section" id="expressions-vs-commands">
-<h2>Expressions vs commands<a class="headerlink" href="#expressions-vs-commands" title="Permalink to this headline">¶</a></h2>
-<p>While expressions have values, commands are instructions, most often to make changes in the program or to do something in the environment for the program: for example printing to standard output, or drawing to the screen or using a file.</p>
-<p>We will start from the most elementary command: assignment. For this we need to introduce variables. You might have noticed that the chapter on  expressions did not use variables. Well, actually yes:  in some list comprehensions we did! But this was very much like the use of variables in math. For assignments we need to understand variables as boxes where we can store objects. Assignment is the command for changing the object that is stored in a box.</p>
-<p>Variables are identifiers that you can introduce in your program  as you need them:  when you assign them an object for the first time. In Python assignments look as follows:</p>
-<p><code class="docutils literal notranslate"><span class="pre">variable</span> <span class="pre">=</span> <span class="pre">expression</span></code></p>
-<p>Now you see why we started with expressions: we need them to say what object (value) we want to store in a variable.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Notice  that the assignment command has a variable to the left and an expression to the right and is not a comparison between two values.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>The symbol  <code class="docutils literal notranslate"><span class="pre">=</span></code> should not be confused with equality.</p>
-<p>In Python equality is an operation and is designated with <code class="docutils literal notranslate"><span class="pre">==</span></code>.</p>
-<p>I tis used with two expressions as in</p>
-<p><code class="docutils literal notranslate"><span class="pre">expression</span> <span class="pre">==</span> <span class="pre">expression</span></code></p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="conditionals">
+<h1>Conditionals<a class="headerlink" href="#conditionals" title="Permalink to this headline">¶</a></h1>
+<p>Conditionals are used to choose between different commands. The <code class="docutils literal notranslate"><span class="pre">if</span></code> statement is what Python provides for choosing between different commands. The Python documentation has more information in <a class="reference external" href="https://docs.python.org/3/reference/compound_stmts.html#if">if</a>.</p>
+<p>Here are some examples.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># We want to simulate flipping a coin.</span>
+<span class="c1"># We start by importing random:</span>
+
+<span class="kn">import</span> <span class="nn">random</span>
+</pre></div>
 </div>
 </div>
-<div class="toctree-wrapper compound">
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;HEADS&#39;</span><span class="p">)</span>
+<span class="k">else</span>                         <span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;TAILS&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>TAILS
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># We assign to val before testing because every time we use the</span>
+<span class="c1"># expression random.random() we get a new value!</span>
+
+<span class="n">val</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
+<span class="c1"># 4 tenths of the times heads, 4 tenths of the times tails</span>
+<span class="c1"># 2 tenths of the times standing</span>
+<span class="k">if</span>   <span class="n">val</span> <span class="o">&lt;</span> <span class="mf">0.4</span> <span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;HEADS&#39;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">val</span> <span class="o">&lt;</span> <span class="mf">0.8</span> <span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;TAILS&#39;</span><span class="p">)</span>
+<span class="k">else</span>          <span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;STANDING&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>STANDING
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 
@@ -364,17 +377,17 @@
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="the-end.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="sequence.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">The end</p>
+            <p class="prev-next-title">Sequence</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="assignment.html" title="next page">
+    <a class='right-next' id="next-link" href="loops.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Assignment</p>
+        <p class="prev-next-title">Loops</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
