@@ -97,6 +97,31 @@ for x in range(5):
     print()
 
 
+# ## The ```while``` statement
+# 
+# This statement can be used when a given command has to be executed **as long as a condition holds**.
+# 
+# Here are some examples. 
+# 
+# We want you to notice 2 things:
+# 
+# * the command that is repeated has to be written after the ```:``` and indented.
+# 
+# * the command that is repeated can be formed using all ways of building commands: assignments, sequence, conditionals and other loops!
+# 
+# The first example is a sequence of an assignment, a print command and a while statement. The command to be repeated (after the : and indented) will be executed as long as the value of n is larger than 1 (when the value of n becomes 1 or less the while loop will terminate). This command that is repetated is a sequence of an if statement and a print command. Observe that each turn of the loop modifies n, though not always to a smaller value! It is unclear whether the loop terminates for any possible value of n! You can check [the Collatz conjecture](https://en.wikipedia.org/wiki/Collatz_conjecture).
+
+# In[7]:
+
+
+n = random.randrange(1,50)
+print(n)
+while n > 1:
+    if n % 2 == 0: n = n // 2    # if n is even, divide it by 2
+    else         : n = 3 * n + 1 # if n is odd, multiply it by 3 and add 1
+    print(n)
+
+
 # In[ ]:
 
 

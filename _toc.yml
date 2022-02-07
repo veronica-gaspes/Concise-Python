@@ -20,4 +20,6 @@ chapters:
   - file: conditionals
   - file: loops
 - file: function-definition
+  sections:
+  - file: fun-defs
 - file: class-definition

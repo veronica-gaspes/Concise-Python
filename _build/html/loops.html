@@ -176,10 +176,22 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="function-definition.html">
    Function definitions
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="fun-defs.html">
+     Defining functions
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="class-definition.html">
@@ -301,6 +313,17 @@
    statement
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-while-statement">
+   The
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     while
+    </span>
+   </code>
+   statement
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -327,6 +350,17 @@
    <code class="docutils literal notranslate">
     <span class="pre">
      for
+    </span>
+   </code>
+   statement
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-while-statement">
+   The
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     while
     </span>
    </code>
    statement
@@ -393,16 +427,16 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>HEADS
-TAILS
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>TAILS
+STANDING
 HEADS
-TAILS
-TAILS
+HEADS
+HEADS
+HEADS
 STANDING
+HEADS
 STANDING
-TAILS
-TAILS
-TAILS
+HEADS
 </pre></div>
 </div>
 </div>
@@ -431,9 +465,9 @@ TAILS
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Heads:  4970
-Tails:  4796
-Standing:  234
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Heads:  4893
+Tails:  4925
+Standing:  182
 </pre></div>
 </div>
 </div>
@@ -474,6 +508,51 @@ Standing:  234
 (2, 2) (2, 3) (2, 4) 
 (3, 3) (3, 4) 
 (4, 4) 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="the-while-statement">
+<h2>The <code class="docutils literal notranslate"><span class="pre">while</span></code> statement<a class="headerlink" href="#the-while-statement" title="Permalink to this headline">¶</a></h2>
+<p>This statement can be used when a given command has to be executed <strong>as long as a condition holds</strong>.</p>
+<p>Here are some examples.</p>
+<p>We want you to notice 2 things:</p>
+<ul class="simple">
+<li><p>the command that is repeated has to be written after the <code class="docutils literal notranslate"><span class="pre">:</span></code> and indented.</p></li>
+<li><p>the command that is repeated can be formed using all ways of building commands: assignments, sequence, conditionals and other loops!</p></li>
+</ul>
+<p>The first example is a sequence of an assignment, a print command and a while statement. The command to be repeated (after the : and indented) will be executed as long as the value of n is larger than 1 (when the value of n becomes 1 or less the while loop will terminate). This command that is repetated is a sequence of an if statement and a print command. Observe that each turn of the loop modifies n, though not always to a smaller value! It is unclear whether the loop terminates for any possible value of n! You can check <a class="reference external" href="https://en.wikipedia.org/wiki/Collatz_conjecture">the Collatz conjecture</a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">50</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<span class="k">while</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">//</span> <span class="mi">2</span>    <span class="c1"># if n is even, divide it by 2</span>
+    <span class="k">else</span>         <span class="p">:</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span> <span class="c1"># if n is odd, multiply it by 3 and add 1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>15
+46
+23
+70
+35
+106
+53
+160
+80
+40
+20
+10
+5
+16
+8
+4
+2
+1
 </pre></div>
 </div>
 </div>

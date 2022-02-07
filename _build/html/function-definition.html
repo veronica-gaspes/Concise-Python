@@ -51,8 +51,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Class definitions" href="class-definition.html" />
-    <link rel="prev" title="Commands" href="commands.html" />
+    <link rel="next" title="Defining functions" href="fun-defs.html" />
+    <link rel="prev" title="Loops" href="loops.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -139,15 +139,59 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="commands.html">
    Commands
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="assignment.html">
+     Assignment
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="list-methods.html">
+     List methods and operations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sequence.html">
+     Sequence
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="conditionals.html">
+     Conditionals
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="loops.html">
+     Loops
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1 current active">
+ <li class="toctree-l1 current active has-children">
   <a class="current reference internal" href="#">
    Function definitions
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="fun-defs.html">
+     Defining functions
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="class-definition.html">
@@ -256,10 +300,28 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="function-definitions">
 <h1>Function definitions<a class="headerlink" href="#function-definitions" title="Permalink to this headline">¶</a></h1>
-<p>You can define your own functions.</p>
+<p>You can define your own functions. Functions are introduced using the
+keyword  <code class="docutils literal notranslate"><span class="pre">def</span></code>.  You then need to provide</p>
+<ul class="simple">
+<li><p>a name of your function</p></li>
+<li><p>the arguments (just like variables)</p></li>
+<li><p>the body of the function (a code fragment to calculate what you want
+with the arguments)</p></li>
+<li><p>a <code class="docutils literal notranslate"><span class="pre">return</span></code> statement to indicate  the value that the
+function has calculated given the arguments.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Functions in Python are a little bit more general than functions in
+mathematics. They can be used to define commands. In this case they
+might not calculate a value, just have an effect. In this case there
+is no need for a <code class="docutils literal notranslate"> <span class="pre">return</span></code> statement.</p>
+</div>
 <p>The book
 <a class="reference external" href="https://introcs.cs.princeton.edu/python/">Introduction to programming in Python</a>
 presents function definitions in <a class="reference external" href="https://introcs.cs.princeton.edu/python/21function/.">chapter 2.1</a></p>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -287,17 +349,17 @@ presents function definitions in <a class="reference external" href="https://int
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="commands.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="loops.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Commands</p>
+            <p class="prev-next-title">Loops</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="class-definition.html" title="next page">
+    <a class='right-next' id="next-link" href="fun-defs.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Class definitions</p>
+        <p class="prev-next-title">Defining functions</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
