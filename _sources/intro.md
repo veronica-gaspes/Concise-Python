@@ -2,7 +2,7 @@
 
 These  notes address students that have already taken a
 course in programming and need to become familiar with Python. We hope
-it will be useful for students that will take courses that use Python to teach
+they will be useful for students that will take courses that use Python to teach
 algorithms, data structures and libraries for dealing with tabular
 data and for linear algebra.
 
