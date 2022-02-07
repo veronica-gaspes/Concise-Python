@@ -23,3 +23,5 @@ chapters:
   sections:
   - file: fun-defs
 - file: class-definition
+  sections:
+  - file: class-defs
