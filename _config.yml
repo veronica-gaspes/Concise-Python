@@ -3,7 +3,8 @@
 
 title: A concise presentation of Python
 author: Veronica Gaspes
-logo: hhlogo.png
+copyright: none
+logo: python.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
