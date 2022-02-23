@@ -3,7 +3,7 @@
 
 # # Conditionals
 # 
-# Conditionals are used to choose between different commands. The ```if``` statement is what Python provides for choosing between different commands. The Python documentation has more information in [if](https://docs.python.org/3/reference/compound_stmts.html#if).
+# Conditionals are used to choose between different statements. The ```if``` statement is what Python provides for choosing between different statements. The Python documentation has more information in [if](https://docs.python.org/3/reference/compound_stmts.html#if).
 # 
 # Here are some examples. 
 

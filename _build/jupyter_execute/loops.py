@@ -13,9 +13,9 @@
 # 
 # We want you to notice 2 things:
 # 
-# * the command that is repeated has to be written after the ```:``` and indented.
+# * the command (statement) that is repeated has to be written after the ```:``` and indented.
 # 
-# * the command that is repeated can be formed using all ways of building commands: assignments, sequence, conditionals and other loops!
+# * the command (statement) that is repeated can be formed using all ways of building commands: assignments, sequence, conditionals and other loops!
 
 # In[1]:
 

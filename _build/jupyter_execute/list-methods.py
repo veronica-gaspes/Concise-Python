@@ -3,11 +3,11 @@
 
 # # List methods and operations
 # 
-# Methods and operations can also be used to build commands. 
+# Methods and operations can also be used to build statements. 
 # 
 # In the Python documentation you will find several methods and operations that are commands to modify lists. They are documented in [mutable sequences](https://docs.python.org/3/library/stdtypes.html#typesseq-mutable).
 # 
-# Here we show some of the most common ones. Remeber that commands do not have values, they do something (like assignment: change the value of a variable).
+# Here we show some of the most common ones. Remeber that statements do not have values, they do something (like assignment: change the value of a variable).
 
 # In[1]:
 

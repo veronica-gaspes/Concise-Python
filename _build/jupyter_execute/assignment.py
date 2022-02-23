@@ -3,7 +3,7 @@
 
 # # Assignment
 # 
-# An assignment is a command to replace the value stored in a variable with a value specified as an expression. In Python variables are introduced wherever you need them, there is no need to declare them or state what type of values they can store. Here follow some examples of assignments. 
+# An assignment statement is a command to replace the value stored in a variable with a value specified as an expression. In Python variables are introduced wherever you need them, there is no need to declare them or state what type of values they can store. Here follow some examples of assignments. 
 
 # In[1]:
 
@@ -11,7 +11,7 @@
 x = 2 ** 32
 
 
-# As you can see, when we use this code there is no result! In fact, most commands do not have a value. We will see later that in Python there are commands that aslo calculate a value. 
+# As you can see, when we use this code there is no result! In fact, most statements do not have a value. We will see later that in Python there are statements that aslo calculate a value. 
 # 
 # In order to see what has happened we need to use ```x```.
 # 

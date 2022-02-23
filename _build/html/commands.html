@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Commands &#8212; A concise presentation of Python</title>
+    <title>Statements &#8212; A concise presentation of Python</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -141,7 +141,7 @@
  </li>
  <li class="toctree-l1 current active has-children">
   <a class="current reference internal" href="#">
-   Commands
+   Statements
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -267,11 +267,11 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/veronica-gaspes/Concise-Python"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fcommands.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/veronica-gaspes/Concise-Python/issues/new?title=Issue%20on%20page%20%2Fcommands.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -298,8 +298,8 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#expressions-vs-commands">
-   Expressions vs commands
+  <a class="reference internal nav-link" href="#expressions-vs-statements">
+   Expressions vs statements
   </a>
  </li>
 </ul>
@@ -312,7 +312,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Commands</h1>
+                <h1>Statements</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -323,8 +323,8 @@
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#expressions-vs-commands">
-   Expressions vs commands
+  <a class="reference internal nav-link" href="#expressions-vs-statements">
+   Expressions vs statements
   </a>
  </li>
 </ul>
@@ -336,20 +336,20 @@
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="commands">
-<h1>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h1>
-<p>Commands can be executed.  Commands are formed using assignments, sequences, conditionals, loops and methods This chapter shows you how to use commands.</p>
-<p>The book <a class="reference external" href="https://introcs.cs.princeton.edu/python/">Introduction to programming in Python</a> presents some commands  in <a class="reference external" href="https://introcs.cs.princeton.edu/python/13flow/.">chapter 1.3</a></p>
-<div class="section" id="expressions-vs-commands">
-<h2>Expressions vs commands<a class="headerlink" href="#expressions-vs-commands" title="Permalink to this headline">¶</a></h2>
-<p>While expressions have values, commands are instructions, most often to make changes in the program or to do something in the environment for the program: for example printing to standard output, or drawing to the screen or using a file.</p>
-<p>We will start from the most elementary command: assignment. For this we need to introduce variables. You might have noticed that the chapter on  expressions did not use variables. Well, actually yes:  in some list comprehensions we did! But this was very much like the use of variables in math. For assignments we need to understand variables as boxes where we can store objects. Assignment is the command for changing the object that is stored in a box.</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="statements">
+<h1>Statements<a class="headerlink" href="#statements" title="Permalink to this headline">¶</a></h1>
+<p>Statements are commands and can be executed.  Statements  are formed using assignments, sequences, conditionals, loops and methods This chapter shows you how to use statements.</p>
+<p>The book <a class="reference external" href="https://introcs.cs.princeton.edu/python/">Introduction to programming in Python</a> presents some statements  in <a class="reference external" href="https://introcs.cs.princeton.edu/python/13flow/.">chapter 1.3</a></p>
+<div class="section" id="expressions-vs-statements">
+<h2>Expressions vs statements<a class="headerlink" href="#expressions-vs-statements" title="Permalink to this headline">¶</a></h2>
+<p>While expressions have values, statements are instructions (commands), most often to make changes in the program or to do something in the environment for the program: for example printing to standard output, or drawing to the screen or using a file.</p>
+<p>We will start from the most elementary statement: assignment. For this we need to introduce variables. You might have noticed that the chapter on  expressions did not use variables. Well, actually yes:  in some list comprehensions we did! But this was very much like the use of variables in math. For assignments we need to understand variables as boxes where we can store objects. Assignment is the statement for changing the object that is stored in a box.</p>
 <p>Variables are identifiers that you can introduce in your program  as you need them:  when you assign them an object for the first time. In Python assignments look as follows:</p>
 <p><code class="docutils literal notranslate"><span class="pre">variable</span> <span class="pre">=</span> <span class="pre">expression</span></code></p>
 <p>Now you see why we started with expressions: we need them to say what object (value) we want to store in a variable.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Notice  that the assignment command has a variable to the left and an expression to the right and is not a comparison between two values.</p>
+<p>Notice  that the assignment statement has a variable to the left and an expression to the right and is not a comparison between two values.</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
