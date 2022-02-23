@@ -141,7 +141,7 @@
  </li>
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="commands.html">
-   Commands
+   Statements
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -355,9 +355,9 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="sequence">
 <h1>Sequence<a class="headerlink" href="#sequence" title="Permalink to this headline">¶</a></h1>
-<p>We now start looking at how we can put together commands to build programs.</p>
-<p>The first way of puting together commands is in a sequence. In Python you do this by writing the commands in consecutive lines.</p>
-<p>A sequence of commands executes the commands one after the other, accumulating the changes.</p>
+<p>We now start looking at how we can put together statements to build programs.</p>
+<p>The first way of puting together statements is in a sequence. In Python you do this by writing the statements in consecutive lines.</p>
+<p>A sequence of statements is executed by executing the statements one after the other, accumulating the changes.</p>
 <p>Here are some examples:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -378,8 +378,8 @@
 </div>
 <div class="section" id="writing-to-standard-output">
 <h2>Writing to standard output<a class="headerlink" href="#writing-to-standard-output" title="Permalink to this headline">¶</a></h2>
-<p>We take the opportunity to introduce a command for writing values to standard output.</p>
-<p>In the example notice that the command <code class="docutils literal notranslate"><span class="pre">print(x)</span></code> that we use several times, writes different values to standard output. It uses the value of <code class="docutils literal notranslate"><span class="pre">x</span></code> at the point where the command is executed, an we change the value of <code class="docutils literal notranslate"><span class="pre">x</span></code> with assignments.</p>
+<p>We take the opportunity to introduce a statement for writing values to standard output.</p>
+<p>In the example notice that the statement <code class="docutils literal notranslate"><span class="pre">print(x)</span></code> that we use several times, writes different values to standard output. It uses the value of <code class="docutils literal notranslate"><span class="pre">x</span></code> at the point where the statement is executed, an we change the value of <code class="docutils literal notranslate"><span class="pre">x</span></code> with assignments.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
@@ -405,7 +405,7 @@
 </div>
 </div>
 </div>
-<p>The <code class="docutils literal notranslate"><span class="pre">print</span></code> command can be configured by including what the last string should be. As it is, the last string is a new line character.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">print</span></code> statement can be configured by including what the last string should be. As it is, the last string is a new line character.</p>
 <p>Here we configure it so that it uses a comma and a white space:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
