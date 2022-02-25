@@ -111,7 +111,7 @@ z
 # 
 # *(yes, identifiers can use an underscore _ and numbers in them! They can even start with an underscore (but not with a number)!)*
 # 
-# and say you want to modify the value stord in the variable so that is it the double of the value currently stored in the variable. What assignment abbreviation would you use? 
+# and say you want to modify the value stored in the variable so that is it the double of the value currently stored in the variable. What assignment abbreviation would you use? 
 
 # ## Swapping values
 # 

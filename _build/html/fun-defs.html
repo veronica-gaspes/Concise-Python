@@ -404,7 +404,7 @@
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># n is an natural number: indicates the number of positive odds </span>
 <span class="c1"># that will be added.</span>
-<span class="k">def</span> <span class="nf">first_evens_sum</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">first_odds_sum</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="k">return</span> <span class="nb">sum</span><span class="p">([</span><span class="mi">2</span><span class="o">*</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)])</span>
 </pre></div>
 </div>
@@ -412,7 +412,7 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">first_evens_sum</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">first_odds_sum</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -425,7 +425,7 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># here is an expression that uses your function:</span>
-<span class="n">first_evens_sum</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="o">==</span> <span class="mi">10</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">first_odds_sum</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="o">==</span> <span class="mi">10</span><span class="o">**</span><span class="mi">2</span>
 </pre></div>
 </div>
 </div>
@@ -439,7 +439,7 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">hypothesis</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">first_evens_sum</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">==</span> <span class="n">n</span><span class="o">**</span><span class="mi">2</span>
+    <span class="k">return</span> <span class="n">first_odds_sum</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">==</span> <span class="n">n</span><span class="o">**</span><span class="mi">2</span>
 </pre></div>
 </div>
 </div>
@@ -487,7 +487,7 @@
 </div>
 <p>The function  <code class="docutils literal notranslate"><span class="pre">test_hypothesis</span></code> can seem a little strange; so lets explain it. The result is a truth value (a boolean): either true or false. Given a number that says how many times we want to test the hypothesis, it returns either true or false.</p>
 <p>The first thing to notice is that we needed commands to be able to calculate a result: the body of the function is not just an expression, instead it is a command that calculates a value.</p>
-<p>The second thing to notice is the use of the <code class="docutils literal notranslate"><span class="pre">return</span></code> statement. There is one use inside the <code class="docutils literal notranslate"><span class="pre">for-</span></code>loop. Every turn of the loop a random number is generated and used to compare the value of  <code class="docutils literal notranslate"><span class="pre">first_evens_sum(n)</span></code>with <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">**</span> <span class="pre">2</span></code> (using the function <code class="docutils literal notranslate"><span class="pre">hypothesis</span></code>). If the hypothesis does not hold for a given number it means we do not need to do any more tests, we know already the result! The return in that place quits not only the <code class="docutils literal notranslate"><span class="pre">for-</span></code>loop but also the function with value <code class="docutils literal notranslate"><span class="pre">False</span></code>. If all of the random numbers that were generated in each turn of the loop do not falsify the hypothesis the loop will terminate after all the turns: and then we also know that the result is  <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
+<p>The second thing to notice is the use of the <code class="docutils literal notranslate"><span class="pre">return</span></code> statement. There is one use inside the <code class="docutils literal notranslate"><span class="pre">for-</span></code>loop. Every turn of the loop a random number is generated and used to compare the value of  <code class="docutils literal notranslate"><span class="pre">first_odds_sum(n)</span></code>with <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">**</span> <span class="pre">2</span></code> (using the function <code class="docutils literal notranslate"><span class="pre">hypothesis</span></code>). If the hypothesis does not hold for a given number it means we do not need to do any more tests, we know already the result! The return in that place quits not only the <code class="docutils literal notranslate"><span class="pre">for-</span></code>loop but also the function with value <code class="docutils literal notranslate"><span class="pre">False</span></code>. If all of the random numbers that were generated in each turn of the loop do not falsify the hypothesis the loop will terminate after all the turns: and then we also know that the result is  <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
 <p><a id="commands"></a></p>
 </div>
 <div class="section" id="functions-can-be-commands">

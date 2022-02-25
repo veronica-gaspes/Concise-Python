@@ -30,21 +30,21 @@
 
 # n is an natural number: indicates the number of positive odds 
 # that will be added.
-def first_evens_sum(n):
+def first_odds_sum(n):
     return sum([2*i-1 for i in range(1, n+1)])
 
 
 # In[2]:
 
 
-first_evens_sum(4)
+first_odds_sum(4)
 
 
 # In[3]:
 
 
 # here is an expression that uses your function:
-first_evens_sum(10) == 10**2
+first_odds_sum(10) == 10**2
 
 
 # In programs functions can return values than need not be numbers, for example booleans. The following function will allow us to test a hypothesis: it seems that the sum of the first $n$ odd numbers is $n^2$.
@@ -53,7 +53,7 @@ first_evens_sum(10) == 10**2
 
 
 def hypothesis(n):
-    return first_evens_sum(n) == n**2
+    return first_odds_sum(n) == n**2
 
 
 # In[5]:
@@ -93,7 +93,7 @@ test_hypothesis(10)
 # 
 # The first thing to notice is that we needed commands to be able to calculate a result: the body of the function is not just an expression, instead it is a command that calculates a value.  
 # 
-# The second thing to notice is the use of the ```return``` statement. There is one use inside the ```for-```loop. Every turn of the loop a random number is generated and used to compare the value of  ```first_evens_sum(n)```with ```n ** 2``` (using the function ```hypothesis```). If the hypothesis does not hold for a given number it means we do not need to do any more tests, we know already the result! The return in that place quits not only the ```for-```loop but also the function with value ```False```. If all of the random numbers that were generated in each turn of the loop do not falsify the hypothesis the loop will terminate after all the turns: and then we also know that the result is  ```True```.
+# The second thing to notice is the use of the ```return``` statement. There is one use inside the ```for-```loop. Every turn of the loop a random number is generated and used to compare the value of  ```first_odds_sum(n)```with ```n ** 2``` (using the function ```hypothesis```). If the hypothesis does not hold for a given number it means we do not need to do any more tests, we know already the result! The return in that place quits not only the ```for-```loop but also the function with value ```False```. If all of the random numbers that were generated in each turn of the loop do not falsify the hypothesis the loop will terminate after all the turns: and then we also know that the result is  ```True```.
 
 # <a id="commands"></a>
 # 
